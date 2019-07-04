@@ -5,7 +5,7 @@ const socket = io.connect(API_URL);
 const mice = {};
 
 socket.on('connect', () => {
-  console.log('connected to the socker server!');
+  console.log('connected to the socket server!');
 });
 
 socket.on('message-client-disconnected', id => {
